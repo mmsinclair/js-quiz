@@ -1,0 +1,15 @@
+{
+  "name": "quiz",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "build": "npm run build --workspace=some-package",
+    "monkey-patch": "npm run monkey-patch --workspace some-package",
+    "clean": "rm -rf dist && rm -rf packages/some-app/node_modules",
+    "run-app": "npm run start --workspace=some-app",
+    "start": "npm run clean && npm run build && npm run run-app && npm run monkey-patch && npm run run-app"
+  },
+  "workspaces": ["packages/some-package", "packages/some-app"],
+  "license": "MIT"
+}

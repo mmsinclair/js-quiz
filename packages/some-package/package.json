@@ -1,0 +1,13 @@
+{
+  "name": "some-package",
+  "version": "1.0.0",
+  "main": "dist/index.mjs",
+  "module": "dist/index.mjs",
+  "private": true,
+  "scripts": {
+    "build": "mkdir -p dist && cp index.mjs dist",
+    "patch": "cp patch.js dist/index.mjs",
+    "monkey-patch": "node monkey-patch.js"
+  },
+  "license": "MIT"
+}

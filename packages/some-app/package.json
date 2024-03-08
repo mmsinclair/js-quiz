@@ -1,0 +1,14 @@
+{
+  "name": "some-app",
+  "version": "1.0.0",
+  "main": "index.mjs",
+  "module": "index.mjs",
+  "private": true,
+  "scripts": {
+    "start": "node index.mjs"
+  },
+  "dependencies": {
+    "some-package": "^1.0.0"
+  },
+  "license": "MIT"
+}
